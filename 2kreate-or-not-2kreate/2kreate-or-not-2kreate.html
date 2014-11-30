@@ -5,7 +5,12 @@
 <body>
   <div class="container">
     <header>
-      <h1>woda:kreatywa for your kreative krew</h1>
+      <h1>woda:kreatywa for your kreative krew ({{incompleteCount}})</h1>
+
+      <label class="hide-completed">
+        <input type="checkbox" checked="{{hideCompleted}}" />
+        forget past thirst
+      </label>
 
       <form class="new-task">
         <input type="text" name="text" placeholder="express how thirsty you are here..." />
