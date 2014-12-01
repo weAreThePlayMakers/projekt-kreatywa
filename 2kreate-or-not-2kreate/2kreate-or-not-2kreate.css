@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #D0EDF5;
-  background-image: linear-gradient(to top, #D0EDF5, #e1e5f0 100%);
+  background-image: linear-gradient(to top, #00adcf, rgba(0, 191, 209, 0.45) 100%);
   background-attachment: fixed;
 
   position: absolute;
@@ -25,7 +25,7 @@ body {
 
 header {
   background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  background-image: linear-gradient(to bottom, #00adcf, rgba(0, 191, 209, 0.45) 100%);
   padding: 30px 25px 25px 25px;
   position: relative;
 }
