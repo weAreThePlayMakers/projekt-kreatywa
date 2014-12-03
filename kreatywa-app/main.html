@@ -1,0 +1,56 @@
+<head>
+  <title>kreatywaApp: for your writing pleasure</title>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fa fa-paper-plane"></i> kreatywaApp:</h1>
+      <h2>for your writing pleasure</h2>
+    </header>
+
+    {{> addPost}}
+
+    {{> postList}}
+
+
+    <hr>
+    <footer>
+      <p>
+        <a href="http://meteor.academy" target="_blank">kreatywaApp:</a> was created for your writing pleasure by <a href="http://rafszul.github.io/" target="_blank">rafszul</a> with <a href="https://www.meteor.com/" target="_blank">meteor.js</a>
+      </p>
+    </footer>
+  </div><!-- end .container -->
+</body>
+
+<template name="addPost">
+  <section class="addPost">
+    <form>
+      <input type="text" name="title" class="title" placeholder="Title" required><br>
+      <textarea class="story" placeholder="be kreative"></textarea><br>
+      <input type="text" name="author" class="author" placeholder="any name" required><br>
+
+      <input type="submit" value="post">
+    </form>
+  </section><!-- end .addPost -->
+</template>
+
+<template name="postList">
+  <section class="postList">
+    {{#each posts}}
+    <article>
+      <h3>{{title}}</h3>
+      <p>
+        {{story}}
+      </p>
+      <small>
+        <p>
+          — {{author}}, this story was published on {{date}}
+          <i class="fa fa-trash delete"></i>
+        </p>
+      </small>
+    </article>
+    {{/each}}
+  </section><!-- end .main -->
+</template>
