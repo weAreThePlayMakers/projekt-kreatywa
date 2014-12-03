@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: project:kreatywa
 subtitle:
-description:
-author: John Doe
-email:
+description: digital development and consulting agency specialising in design and creation of innovative and efficient technical solutions for organisations in relation to their content, branding and marketing efforts on digital platforms
+author: weAreThePlayMakers
+email: info@wearetheplaymakers.com
 language:
 
 # URL
@@ -85,4 +85,7 @@ exclude_generator:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github
+  repo: https://github.com/weAreThePlayMakers/projekt-kreatywa/tree/master/kreatywa-blog
+  branch: [branch]
+  message: [message]
